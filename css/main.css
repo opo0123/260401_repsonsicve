@@ -1,0 +1,67 @@
+/* css 초기화 */
+@import url("reset.css");
+
+/* pc 버전 */
+body {
+  background: url(../images/bg0.jpg) no-repeat;
+  background-size: cover;
+}
+h1 {
+  color: red;
+  font-size: 70px;
+}
+h2 {
+  display: none;
+}
+h3 {
+  display: none;
+}
+
+/* 미디어 사이즈 */
+/* 1200px */
+@media (max-width: 1200px) {
+  body {
+    background: url(../images/bg1.jpg) no-repeat;
+  }
+}
+/* 1000px */
+@media (max-width: 1000px) {
+  body {
+    background: url(../images/bg2.jpg) no-repeat;
+  }
+}
+/* 768px - 테블릿 */
+@media (max-width: 768px) {
+  body {
+    background: url(../images/bg3.jpg) no-repeat;
+  }
+  h1 {
+    color: blue;
+    font-size: 50px;
+  }
+  h2 {
+    display: block;
+  }
+}
+/* 480px */
+@media (max-width: 480px) {
+  body {
+    background: url(../images/bg0.jpg) no-repeat;
+  }
+}
+/* 390px - 모바일*/
+@media (max-width: 390px) {
+  body {
+    background: url(../images/bg1.jpg) no-repeat;
+  }
+  h1 {
+    color: yellow;
+    font-size: 30px;
+  }
+  h3 {
+    display: block;
+  }
+  h2 {
+    display: none;
+  }
+}

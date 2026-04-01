@@ -1,0 +1,39 @@
+.box1 {
+  width: 300px;
+  /* height: 500px; */
+  margin: auto;
+  background-color: antiquewhite;
+}
+.box1 img {
+  width: 100%;
+  display: block;
+}
+@media (max-width: 480px) {
+  .box1 {
+    width: 400px;
+    background-color: cornsilk;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 390px) {
+  .box1 {
+    width: 200px;
+  }
+}
+
+/* max,min-width 주면 @media 설정 필요X */
+.box2 {
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  /* height: 500px; */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  background-color: rgb(162, 195, 255);
+}
+.box2 img {
+  width: 100%;
+  display: block;
+}
