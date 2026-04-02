@@ -1,0 +1,77 @@
+@import url("reset.css");
+
+/* pc */
+.flex-box {
+  width: 90%;
+  max-width: 800px;
+  min-width: 290px;
+  margin: auto;
+  display: flex;
+  /* gap: 2%; */
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2%;
+  background-color: aliceblue;
+}
+.flex-box li {
+  width: calc((100% - 6%) / 4);
+  background-color: antiquewhite;
+  /* margin-bottom: 2%; */
+}
+.flex-box li a img {
+  width: 100%;
+  display: block;
+}
+
+.txt {
+  padding: 20px;
+}
+.txt-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+.txt span {
+  font-size: 18px;
+}
+
+/* 사이즈 별 */
+@media (max-width: 768px) {
+  .flex-box li {
+    width: calc((100% - 4%) / 3);
+  }
+  .txt-title {
+    color: rgb(22, 94, 40);
+  }
+  .txt span {
+    color: rgb(112, 21, 131);
+  }
+}
+@media (max-width: 480px) {
+  .flex-box li {
+    width: calc((100% - 2%) / 2);
+  }
+  .txt-title {
+    font-size: 18px;
+    color: blueviolet;
+  }
+  .txt span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .flex-box li {
+    width: 100%;
+  }
+  .flex-box {
+    width: 90%;
+  }
+  .txt-title {
+    font-size: 16px;
+    color: coral;
+  }
+
+  .txt span {
+    font-size: 14px;
+  }
+}

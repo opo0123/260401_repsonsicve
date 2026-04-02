@@ -1,0 +1,103 @@
+@import url("reset.css");
+a {
+  color: #fff;
+}
+/* 전체 레이아웃 */
+.wrap {
+  width: 100%;
+}
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 헤더 */
+.header {
+  padding: 20px;
+  color: #fff;
+  background-color: gray;
+}
+.header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 메뉴 */
+.menu {
+  display: flex;
+  width: 50%;
+  max-width: 500px;
+  min-width: 365px;
+}
+.menu a {
+  width: calc(100% / 4);
+  text-align: center;
+  padding: 10px 0;
+  background-color: #222;
+}
+.menu a:hover {
+  background-color: #505050;
+}
+
+/* 햄버거 바 */
+.hambuger {
+  display: none;
+}
+
+/* 메인 */
+.card-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 20px;
+  padding: 50px;
+}
+.card-list li {
+  width: calc((100% - 6%) / 4);
+  border-radius: 10px;
+  overflow: hidden;
+  /* padding: 2%; */
+  /* text-align: center; */
+  /* background-color: #aaaaaa; */
+}
+.card-list li img {
+  width: 100%;
+  display: block;
+}
+.card-list li {
+  color: #fff;
+}
+/* 디스플레이 */
+/* 768px */
+@media (max-width: 768px) {
+  /* 헤더 */
+  .menu {
+    display: none;
+  }
+  .hambuger {
+    display: block;
+    font-size: 20px;
+  }
+  /* 메인 */
+  .card-list {
+    row-gap: 10px;
+  }
+  .card-list li {
+    width: calc((100% - 4%) / 3);
+  }
+}
+/* 560px */
+@media (max-width: 560px) {
+  .card-list li {
+    width: calc((100% - 2%) / 2);
+  }
+}
+/* 390px */
+@media (max-width: 390px) {
+  .card-list li {
+    width: 100%;
+  }
+}
